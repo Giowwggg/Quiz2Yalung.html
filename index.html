@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Club Registration Form</title>
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body{
+      background-color: blue;
+      background-image: url('robot.jpeg');
+      background-repeat: no repeat;
+      background-size: cover;
+      background-attachment: fixed;
+
+      
+    }
+    .container{
+      background-color: black;
+      color: white;
+    }
+    .navbar-custom{
+        background-color: black;
+       }
+       .navbar-custom, .navbar-brand, .navbar-custom, .nav-link{
+        color: lightblue;
+       }
+       .navbar-custom, .navbar-link:hover{
+        color: blue;
+  </style>
+ 
+ 
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand">OBMC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="narvbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://obmontessori.edu.ph/angeles">HOME</a>
+                  </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="https://obmontessori.edu.ph/contact-us">ABOUT</a>
+                  </li> 
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.google.com/maps/place/Operation+Brotherhood+Montessori+Center/@15.1373051,120.5972898,3a,75y,271.44h,90t/data=!3m7!1e1!3m5!1sfLMYCSbb3qlSd9PNvSoOHA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DfLMYCSbb3qlSd9PNvSoOHA%26yaw%3D271.43634!7i16384!8i8192!4m10!1m2!2m1!1sOB+Montessori+Center,+Inc.!3m6!1s0x3396f237c7d7ec39:0xa3cae61a3f0a87ea!8m2!3d15.1373131!4d120.5971115!15sChpPQiBNb250ZXNzb3JpIENlbnRlciwgSW5jLiIDiAEBkgEKdW5pdmVyc2l0eeABAA!16zL20vMGY1MHM2?hl=en&entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">LOCATE</a>
+                  </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <div class="container mt-5">
+    <div class="form-container">
+      <h1 class="text-center mb-4">Robotics Club Registration Form</h1>
+      <form>
+     
+        <div class="form row md-4">
+          <div class="form-group col col-md-6 col-lg-6">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group col col-md-6 col-lg-6">
+            <label for="age">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter your age">
+          </div>
+        </div>
+       
+       
+        <div class="form row">
+          <div class="form-group col-md-6">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="phone">Phone Number</label>
+            <input type="telephone" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+        </div>
+
+     
+        <div class="form-group">
+          <label>Preferred Robotics Topics</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="programming" value="Programming">
+            <label class="form-check-label" for="programming">Programming</label><br>
+          </div><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="electronics" value="Electronics">
+            <label class="form-check-label" for="electronics">Electronics</label><br>
+          </div><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="mechanicalDesign" value="Mechanical Design">
+            <label class="form-check-label" for="mechanicalDesign">Mechanical Design</label>
+          </div>
+        </div>
+
+     
+        <div class="form-group">
+          <label>Robotics Experience Level</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experienceLevel" id="beginner" value="Beginner">
+            <label class="form-check-label" for="beginner">Beginner</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experienceLevel" id="intermediate" value="Intermediate">
+            <label class="form-check-label" for="intermediate">Intermediate</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="experienceLevel" id="advanced" value="Advanced">
+            <label class="form-check-label" for="advanced">Advanced</label>
+          </div>
+        </div>
+
+     
+        <div class="form-group">
+          <label for="project">Preferred Robotics Project</label>
+          <select class="form-control" id="project">
+            <option selected>Choose a project...</option>
+            <option value="Robot glitch">Robot glitch</option>
+            <option value="Robot talking">Robot talking</option>
+            <option value="Robotic Arm">Robotic Arm</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">Statement of Interest</label>
+          <textarea class="form-control" id="interest" rows="3" placeholder="Why are you interested in joining?"></textarea>
+        </div>
+
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+      </form>
+    </div>
+  </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
